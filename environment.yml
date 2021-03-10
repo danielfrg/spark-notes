@@ -1,0 +1,9 @@
+name: spark
+dependencies:
+- python=3.8
+- pip
+- black
+- jupyterlab
+
+- pip:
+  - pyspark
