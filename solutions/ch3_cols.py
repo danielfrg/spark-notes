@@ -101,22 +101,3 @@ blogs_df.sort("ID", ascending=False).show()
 blogs_df.sort(_.col("Id"), ascending=False).show()
 
 # %%
-
-from pyspark.sql import Row
-
-blog_row = Row(
-    6,
-    "Reynold",
-    "Xin",
-    "https://tinyurl.6",
-    255568,
-    "3/2/2015",
-    ["twitter", "LinkedIn"],
-)
-# access using index for individual items blog_row[1]
-
-# %%
-
-rows = [Row("Matei Zaharia", "CA"), Row("Reynold Xin", "CA")]
-authors_df = spark.createDataFrame(rows, ["Authors", "State"])
-authors_df.show()

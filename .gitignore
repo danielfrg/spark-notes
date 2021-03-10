@@ -138,5 +138,5 @@ dmypy.json
 cython_debug/
 
 # Project specific
-LearningSparkV2
 spark-*-bin*
+*.parquet
