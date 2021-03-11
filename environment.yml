@@ -3,7 +3,10 @@ dependencies:
 - python=3.8
 - pip
 - black
+
 - jupyterlab
+- pandas
+- pyarrow
 
 - pip:
   - pyspark
